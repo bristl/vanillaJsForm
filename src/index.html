@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Webpack Template</title>
+</head>
+<body>
+
+  <!-- main wrapper -->
+  <div class="wrapper">
+    <!-- #app wrapper for vue -->
+    <div id="app">
+      <!-- only content wrapper -->
+      <div class="content-wrapper">
+        <!-- expamle vue component -->
+        <example-component/>
+      </div> <!-- end content wrapper -->
+
+    <footer></footer>
+
+    </div> <!-- end #app wrapper -->
+    <h1>Я не умею отношения к VUE!</h1>
+    <h3>Я еще маленькая табличка, но скоро точно стану как Vue</h3>
+
+    <!-- Форма "Стороны и объекты договора" не использует Vue -->
+    <form class="form" action="javascript: void(0)">
+      <!-- Участники договора -->
+      <div class="container__form-input" id="container__form-input">
+        <div class="">Участники договора</div>
+        <button class="button button__plus" id="addNewInput" type="submit">+</button>
+        <div class="container__input">
+          <input class="nameField" type="text" placeholder="" name='name'>
+          <input class="phoneField" type="tel" placeholder="+7 000 000 000" name='phone'>
+        </div>
+        
+    </div>
+      <!-- Вид собственности -->
+      <div class="container__form-input">
+        <div class="">Вид собственности</div>
+        <label for="typeField"></label>
+        <select class="typeField" id="typeField">
+          <option value="1">Общая собственность</option>
+          <option value="2">Частная собственность</option>
+          <option value="3">Государственная собственность</option>
+        </select>
+      </div>
+      <div class="container__form-input">
+        <ul class="type-container" id="type-container">
+          
+
+        </ul>
+      <div id="totalArea"></div>
+      </div>
+      <div class="tabel" id="tabel">
+       
+      </div>
+      
+      <div class="send-button-container">
+        <div class="send-button"><button class="button" id="send" type="submit">Send</button></div>
+        <div class=""><button class="button" id="load" type="button">Load</button></div>
+      </div>
+    </form>
+    <!-- END! Форма "Стороны и объекты договора" не использует Vue -->
+  </div> <!-- end main wrapper -->
+
+</body>
+</html>
